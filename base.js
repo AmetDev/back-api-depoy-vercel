@@ -56,4 +56,4 @@ const arrData = [
 	},
 ]
 
-module.export = arrData
+module.exports = arrData
