@@ -1,7 +1,7 @@
 const express = require('express')
 const fileUpload = require('express-fileupload')
 
-const PORT = 9099
+const PORT = 9098
 
 const app = express()
 const routes = require('./router')
