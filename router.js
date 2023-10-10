@@ -10,7 +10,7 @@ router.post('/posts', async (req, res) => {
         const parking = req.body;
         const parkingData = JSON.parse(fs.readFileSync('database.json'));
         parkingData.push(parking);
-        fs.writeFileSync('database.json', JSON.stringify(parkingData));
+        fs.writeFileSync('./database.json', JSON.stringify(parkingData));
         res.json(parkingData);
     } catch (e) {
         res.status(500).json({ error: e.message });
